@@ -122,7 +122,6 @@ header img {
 
 .hero-section {
 	height: 500px;
-	border-bottom: 1px solid black;
 }
 
 .hero-section div {
@@ -159,11 +158,22 @@ header img {
 	margin-left: auto;
 }
 
+.divider {
+	height: 1px;
+	background-color: black;
+	margin-bottom: 40px;
+}
+
+.features-section {
+	padding-right: 20px;
+}
+
 .features-section, .about-section {
 	display: inline-block;
 	width: 50%;
 	float: left;
 	padding: 40px 0;
+	padding-top: 0;
 }
 
 figure img {
@@ -174,13 +184,13 @@ figure img {
 	display: inline-block;
 	width: 33.3%;
 	padding: 40px 0;
-	border-bottom: 1px solid black;
+	padding-bottom: 0;
 	margin-bottom: 40px;
 }
 
 .services-section, .product-section {
 	float: left;
-
+	padding-right: 20px;
 }
 
 .contact-section p {
