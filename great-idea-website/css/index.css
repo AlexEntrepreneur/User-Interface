@@ -64,39 +64,59 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
 * {
 	box-sizing: border-box;
 	color: black;
 }
 
-body {
-	max-width: 1024px;
-	margin: 0 auto;
+html, body {
+	font-family: 'Bai Jamjuree';
+	font-size: 17px;
+}
+
+p {
+	line-height: 26px;
 }
 
 h1 {
 	font-size: 80px;
 }
 
+h2 {
+	font-size: 22px;
+}
+
+.content-container, .header-content-container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
 header {
-	position: relative;
+	z-index: 1;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	background-color: white;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.2);
 }
 
 nav {
 	display: inline-block;
+	height: 100px;
 }
 
 nav a {
-	line-height: 120px;
+	line-height: 100px;
 	text-decoration: none;
 	margin-right: 70px;
 	color: #BCBCBC;
 }
 
 header img {
-	position: absolute;
-	top: 50%;
-	right: 0;
+	position: relative;
+	top: 50px;
+	float: right;
 	transform: translateY(-50%);
 }
 
@@ -123,8 +143,10 @@ header img {
 	-webkit-appearance: none;
 	font-size: 16px;
 	padding: 10px 40px;
-	border: 1px solid black;
 	cursor: pointer;
+	background-color: #3f28ef;;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+	color: white;
 }
 
 .main-image-container {
@@ -151,10 +173,14 @@ figure img {
 .services-section, .product-section, .vision-section {
 	display: inline-block;
 	width: 33.3%;
-	float: left;
 	padding: 40px 0;
 	border-bottom: 1px solid black;
 	margin-bottom: 40px;
+}
+
+.services-section, .product-section {
+	float: left;
+
 }
 
 .contact-section p {
